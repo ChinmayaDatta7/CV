@@ -1,0 +1,197 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+    background-image: url('https://bookstr.com/wp-content/uploads/2018/01/francefeature.jpg'), linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0,0.3)) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+
+}
+
+.navbar
+{
+    height: 100px;
+    /* background: white;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 90%; */
+
+    display: flex;
+
+}
+
+.lists
+{
+    width: 35%;
+}
+
+.lists > p
+{
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.brand, .navbar, .lists
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+.btn > button
+{
+    height: 40px;
+    width: 130px;
+    background: #ff414d;
+    border-radius: 5px;
+    border: #ff414d solid 1px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.btn > button:hover
+{
+    box-shadow: -1px 2px 15px 3px white;
+}
+
+.center
+{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ".center h1" selects all h1 */
+
+.center > h1 /* selects the first h1 */
+{
+    font-size: 60px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.center > p
+{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+
+}
+
+.car
+{
+    width: 100%;
+    height: 70px;
+    margin-top: 40px;
+}
+
+.car img
+{
+    animation: moving infinite linear 5s; 
+}
+
+@keyframes moving
+{
+    0%{
+        transform: translateX(20vw);
+    }
+    100%{
+        transform: translateX(70vw);
+    }
+}
+
+.bar
+{
+    width: 60%;
+    height: 55px;
+    margin-top: 70px;
+    background: white;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar input, .bar select
+{
+    height: 51px;
+    font-size: 15px;
+    border: none;
+}
+
+.search
+{
+    height: 54.4px;
+    width: 180px;
+    background: #ff414d;
+    border-radius: 5px;
+    border: #ff414d solid 1px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.looking, .location, .category
+{
+    margin-left: 10px;
+}
+
+.looking  i, .location i, .category i {
+    color: #ff414d;
+    height:30px;
+    width:30px
+}
+
+.card{
+    height: 250px;
+    width: 200px;
+    background: whitesmoke;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap:30px;
+    padding-left:40px ;
+    margin-top: 150px;
+    height: 550px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  
+}
+
+.card img{
+    margin-bottom: 15px;
+}
+
+h5 span{
+    background: rgb(187, 187, 187);
+}
+
+.card:hover{
+    color: white;
+    background: #ff414d;
+}
+
+
